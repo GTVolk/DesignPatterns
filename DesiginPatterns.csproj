@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26195A21-403A-40C7-9F22-287EABDCD0C4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesiginPatterns</RootNamespace>
+    <AssemblyName>DesiginPatterns</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Patterns\Creational\AbstractFactory\AbstractFactory.cs" />
+    <Compile Include="Patterns\Creational\AbstractFactory\AbstractProductB.cs" />
+    <Compile Include="Patterns\Creational\AbstractFactory\AbstractProductA.cs" />
+    <Compile Include="Patterns\Creational\AbstractFactory\Client.cs" />
+    <Compile Include="Patterns\Creational\AbstractFactory\ConcreteFactoryA.cs" />
+    <Compile Include="Patterns\Creational\AbstractFactory\ConcreteFactoryB.cs" />
+    <Compile Include="Patterns\Creational\AbstractFactory\ProductA.cs" />
+    <Compile Include="Patterns\Creational\AbstractFactory\ProductB.cs" />
+    <Compile Include="Patterns\Creational\Builder\Builder.cs" />
+    <Compile Include="Patterns\Creational\Builder\ConcreteBuilder.cs" />
+    <Compile Include="Patterns\Creational\Builder\Director.cs" />
+    <Compile Include="Patterns\Creational\Builder\Product.cs" />
+    <Compile Include="Patterns\Creational\FactoryMethod\ConcreteCreator.cs" />
+    <Compile Include="Patterns\Creational\FactoryMethod\ConcreteProduct.cs" />
+    <Compile Include="Patterns\Creational\FactoryMethod\Creator.cs" />
+    <Compile Include="Patterns\Creational\FactoryMethod\Product.cs" />
+    <Compile Include="Patterns\Creational\LazyInitialization\Fruit.cs" />
+    <Compile Include="Patterns\Creational\Multiton\Multiton.cs" />
+    <Compile Include="Patterns\Creational\ObjectPool\Pool.cs" />
+    <Compile Include="Patterns\Creational\ObjectPool\PooledObject.cs" />
+    <Compile Include="Patterns\Fundamental\DelegationPattern\DelegationA.cs" />
+    <Compile Include="Patterns\Fundamental\DelegationPattern\DelegationB.cs" />
+    <Compile Include="Patterns\Fundamental\DelegationPattern\DelegationC.cs" />
+    <Compile Include="Patterns\Fundamental\DelegationPattern\IDelegation.cs" />
+    <Compile Include="Patterns\Fundamental\ImmutableInterface\Client.cs" />
+    <Compile Include="Patterns\Fundamental\ImmutableInterface\IImmutablePoint2D.cs" />
+    <Compile Include="Patterns\Fundamental\ImmutableInterface\Point2D.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Patterns\Architectural\HMVC\" />
+    <Folder Include="Patterns\Architectural\MVC\" />
+    <Folder Include="Patterns\Architectural\MVP\" />
+    <Folder Include="Patterns\Architectural\MVVM\" />
+    <Folder Include="Patterns\Architectural\NakedObjects\" />
+    <Folder Include="Patterns\Architectural\PAC\" />
+    <Folder Include="Patterns\Architectural\VIPER\" />
+    <Folder Include="Patterns\Behavioral\Blackboard\" />
+    <Folder Include="Patterns\Behavioral\ChainOfResponsibility\" />
+    <Folder Include="Patterns\Behavioral\Command\" />
+    <Folder Include="Patterns\Behavioral\HierarchicalVisitor\" />
+    <Folder Include="Patterns\Behavioral\Interpreter\" />
+    <Folder Include="Patterns\Behavioral\Iterator\" />
+    <Folder Include="Patterns\Behavioral\Mediator\" />
+    <Folder Include="Patterns\Behavioral\Memento\" />
+    <Folder Include="Patterns\Behavioral\NullObject\" />
+    <Folder Include="Patterns\Behavioral\Observer\" />
+    <Folder Include="Patterns\Behavioral\Servant\" />
+    <Folder Include="Patterns\Behavioral\SimplePolicy\" />
+    <Folder Include="Patterns\Behavioral\SingleServingVisitor\" />
+    <Folder Include="Patterns\Behavioral\Specification\" />
+    <Folder Include="Patterns\Behavioral\State\" />
+    <Folder Include="Patterns\Behavioral\Strategy\" />
+    <Folder Include="Patterns\Behavioral\TemplateMethod\" />
+    <Folder Include="Patterns\Behavioral\Visitor\" />
+    <Folder Include="Patterns\Concurrency\ActiveObject\" />
+    <Folder Include="Patterns\Concurrency\Balking\" />
+    <Folder Include="Patterns\Concurrency\BindingProperties\" />
+    <Folder Include="Patterns\Concurrency\ComputeKernel\" />
+    <Folder Include="Patterns\Concurrency\CooperativePattern\" />
+    <Folder Include="Patterns\Concurrency\DoubleCheckedLocking\" />
+    <Folder Include="Patterns\Concurrency\EventBasedAsynchronous\" />
+    <Folder Include="Patterns\Concurrency\GuardedSuspension\" />
+    <Folder Include="Patterns\Concurrency\HalfSyncHalfAsync\" />
+    <Folder Include="Patterns\Concurrency\Join\" />
+    <Folder Include="Patterns\Concurrency\LeadersFollowers\" />
+    <Folder Include="Patterns\Concurrency\Lock\" />
+    <Folder Include="Patterns\Concurrency\MDP\" />
+    <Folder Include="Patterns\Concurrency\MonitorObject\" />
+    <Folder Include="Patterns\Concurrency\Reactor\" />
+    <Folder Include="Patterns\Concurrency\ReadWriteLock\" />
+    <Folder Include="Patterns\Concurrency\Scheduler\" />
+    <Folder Include="Patterns\Concurrency\SingleThreadExecution\" />
+    <Folder Include="Patterns\Concurrency\ThreadPool\" />
+    <Folder Include="Patterns\Concurrency\ThreadSpecificStorage\" />
+    <Folder Include="Patterns\Creational\DependencyInjection\" />
+    <Folder Include="Patterns\Creational\Prototype\" />
+    <Folder Include="Patterns\Creational\RAII\" />
+    <Folder Include="Patterns\Creational\Singleton\" />
+    <Folder Include="Patterns\Enterprise\ActiveRecord\" />
+    <Folder Include="Patterns\Enterprise\BusinessDelegate\" />
+    <Folder Include="Patterns\Enterprise\CompositeEntity\" />
+    <Folder Include="Patterns\Enterprise\CompositeView\" />
+    <Folder Include="Patterns\Enterprise\DAO\" />
+    <Folder Include="Patterns\Enterprise\DispatcherView\" />
+    <Folder Include="Patterns\Enterprise\FrontController\" />
+    <Folder Include="Patterns\Enterprise\InterceptingFilter\" />
+    <Folder Include="Patterns\Enterprise\Registry\" />
+    <Folder Include="Patterns\Enterprise\ServiceActivator\" />
+    <Folder Include="Patterns\Enterprise\ServiceLocator\" />
+    <Folder Include="Patterns\Enterprise\ServiceToWorker\" />
+    <Folder Include="Patterns\Enterprise\SessionFacade\" />
+    <Folder Include="Patterns\Enterprise\TransferObjectAssembler\" />
+    <Folder Include="Patterns\Enterprise\TransferObject\" />
+    <Folder Include="Patterns\Enterprise\UnitOfWork\" />
+    <Folder Include="Patterns\Enterprise\ValueListHandler\" />
+    <Folder Include="Patterns\Enterprise\ViewHelper\" />
+    <Folder Include="Patterns\Fundamental\EventChannel\" />
+    <Folder Include="Patterns\Fundamental\FunctionalDesign\" />
+    <Folder Include="Patterns\Fundamental\MarkerInterface\" />
+    <Folder Include="Patterns\Fundamental\PropertyContainer\" />
+    <Folder Include="Patterns\Other\CarrierRiderMapper\" />
+    <Folder Include="Patterns\Other\Repository\" />
+    <Folder Include="Patterns\Structural\Adapter\" />
+    <Folder Include="Patterns\Structural\Bridge\" />
+    <Folder Include="Patterns\Structural\Composite\" />
+    <Folder Include="Patterns\Structural\Decorator\" />
+    <Folder Include="Patterns\Structural\ExtensionObject\" />
+    <Folder Include="Patterns\Structural\Facade\" />
+    <Folder Include="Patterns\Structural\Flyweight\" />
+    <Folder Include="Patterns\Structural\FrontController\" />
+    <Folder Include="Patterns\Structural\Marker\" />
+    <Folder Include="Patterns\Structural\Module\" />
+    <Folder Include="Patterns\Structural\Proxy\" />
+    <Folder Include="Patterns\Structural\Twin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
